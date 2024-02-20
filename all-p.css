@@ -55,3 +55,12 @@
     text-decoration: none;
     color: #333;
 }
+
+#all-projects-heading {
+    text-align: center;
+    padding: 20px;
+    color: #333; /* Set text color */
+    font-size: 2em; /* Adjust font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
+}
+
