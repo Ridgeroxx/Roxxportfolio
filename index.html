@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROXX - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+/* Wrapper styles with fade-in effect */
+#wrapper {
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 1s ease-in-out; /* Add transition for opacity */
+}
+
+/* Apply the fade-in effect when the class is added */
+#wrapper.fade-in {
+    opacity: 1;
+}
+
+/* Background image styles */
+#home {
+    background-image: url('./Assets/img/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Make the background image fixed */
+    color: #fff; /* Set text color to white for better visibility */
+    padding: 100px 0; /* Adjust padding as needed */
+    text-align: center;
+    position: relative; /* Position relative for z-index */
+    z-index: -1; /* Set z-index to send it to the back */
+    overflow: hidden; /* Ensure the background doesn't overflow */
+}
+
+#home h1.blink {
+    font-size: 3rem; /* Adjust font size as needed */
+    color: #4cc9ff; /* Set text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add a 3D shadow effect */
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation styles */
+nav {
+    position: fixed; /* Set navigation bar position to fixed */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; /* Make it full width */
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Adjust padding for body to compensate for fixed navigation */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* Adjust padding top to accommodate fixed navigation height */
+}
+
+</style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="wrapper" class="fade-in">
+        <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1  class="blink">Welcome to Roxx Portfolio</h1>
+        <!-- Add any additional content here -->
+    </section>
+
+   <!-- About Section -->
+<section id="about">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Welcome! I'm Ridge Sarpong Boateng, a curious soul with a passion for technology and creativity. Growing up in the vibrant streets of Koforidua, Ghana, I was always fascinated by the endless possibilities of the digital world.</p>
+            <p>As a young graduate navigating through the dynamic landscape of technology, I found my calling in web development, graphic design, and software development. Each line of code and stroke of design presents an opportunity to create something meaningful, something that resonates with people.</p>
+            <p>My journey has taken me from the serene landscapes of Koforidua to the bustling streets of Accra, where I now reside. Along the way, I've had the privilege of collaborating with diverse teams, each project a canvas for innovation and collaboration.</p>
+            <p>When I'm not immersed in pixels and code, you'll often find me exploring the rich tapestry of Ghanaian culture, from the rhythms of highlife music to the flavors of our traditional cuisine. Every experience shapes my perspective and fuels my creativity.</p>
+            <p>I believe in the power of technology to transform lives, to bridge gaps, and to inspire change. Whether it's crafting intuitive user experiences or pushing the boundaries of visual storytelling, I'm dedicated to making a meaningful impact, one project at a time.</p>
+            <p>Join me on this journey as we embark on a quest to harness the potential of technology and creativity to shape a brighter, more connected future.</p>
+        </div>
+        <div class="about-image">
+            <img src="./Assets/img/Roxx.jpeg" alt="Ridge Sarpong Boateng">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-gallery">
+        <!-- Portfolio Item 1 -->
+        <a class="portfolio-item">
+            <img src="./Assets/img/D1.jpeg" alt="Portfolio Item 1">
+            <div class="portfolio-info">
+                <h3>Restaurant Flyer</h3>
+                <p>Eye-Catching Design: Our flyer boasts captivating visuals and vibrant colors, sure to grab attention and leave a lasting impression.</p>
+            </div>
+        </a>
+        
+
+        <!-- Portfolio Item 2 -->
+        <a class="portfolio-item">
+            <img src="./Assets/img/D3.jpeg" alt="Portfolio Item 2">
+            <div class="portfolio-info">
+                <h3>Cryto-currency Flyer</h3>
+                <p>Promotional Offers: Featuring exclusive deals and promotions, our flyer entices readers with irresistible discounts and incentives, driving engagement and sales.</p>
+            </div>
+        </a>
+        <!-- Add more portfolio items as needed -->
+        
+    </div>
+    <a href="all-projects.html" class="see-more">See More Projects</a>
+</section>
+
+
+
+    <!-- Services Section -->
+<section id="services">
+    <h2>Services</h2>
+    <div class="services-container">
+        <!-- Service 1 -->
+        <div class="service">
+            <img src="./Assets/img/web.png" alt="Web Development">
+            <h3>Web Development</h3>
+            <p>From simple websites to complex web applications, I create tailored solutions that meet your unique needs and exceed your expectations.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="service">
+            <img src="./Assets/img/graphic.png" alt="Graphic Design">
+            <h3>Graphic Design</h3>
+            <p>Eye-catching designs that captivate your audience and communicate your brand's message effectively across various mediums.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="service">
+            <img src="./Assets/img/software.png" alt="Software Development">
+            <h3>Software Development</h3>
+            <p>Custom software solutions designed to streamline your business processes, enhance productivity, and drive growth.</p>
+        </div>
+        <!-- Add more services as needed -->
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="https://formspree.io/f/xnqedrpv" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+
+
+   <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 A&A ITECH SOLUTIONS. All rights reserved.</p>
+    </div>
+</footer>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
