@@ -352,4 +352,96 @@ footer {
     background-color: #555;
 }
 
+/* Contact Section styles */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Align the content in the center */
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    color: #333; /* Set the color to ensure it's not faded */
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+/* Adjust other styles as needed */
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+.see-more-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove default underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.see-more-button:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+/* CSS for mobile */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    body {
+        font-size: 14px; /* Example: Reduce font size for better readability on mobile */
+    }
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Change to a column layout */
+        text-align: center; /* Center align text */
+    }
+
+    .about-text {
+        margin-right: 0; /* Remove right margin for text */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+
+    .about-image {
+        margin-top: 0; /* Remove top margin for image */
+    }
+}
 
