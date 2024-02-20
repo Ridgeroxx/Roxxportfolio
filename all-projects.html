@@ -3,43 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>ROXX - Portfolio</title>
     <link rel="stylesheet" href="all-p.css">
+    <style>
+        /* Add CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #all-projects {
+            background-image: url('./Assets/img/All-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        #all-projects-heading {
+            color: #fff;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+        .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .project {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .project h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333; /* Set the color of the text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a shadow to the text for better contrast */
+}
+
+        .project p {
+            color: #666;
+            font-size: 1em;
+        }
+    </style>
     <script src="script.js" defer></script>
 </head>
 <body>
     
  <!-- All Projects Page -->
-<section id="all-projects">
-    <h2>All Projects</h2>
+ <section id="all-projects">
+    <h2 id="all-projects-heading">All Projects</h2>
     <div class="portfolio-gallery">
         <!-- Video Project -->
         <div class="project">
-            <video controls width="300"> <!-- Adjust the width as needed -->
+            <video controls width="300">
                 <source src="./Assets/img/Roxx vid.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <h3>COSMETICS WEBSITE</h3>
             <p>Experience the allure of our latest cosmetics collection! Dive into a world of vibrant colors, luxurious textures, and captivating scents that elevate your beauty routine to new heights. Our cosmetics are meticulously crafted to enhance your natural radiance and empower your unique style. Watch our promotional video to discover the transformative power of our products and embark on a journey of self-expression and confidence. Elevate your beauty game with our cosmetics website today!</p>
-            <!-- Add additional details or links as needed -->
         </div>
 
         <!-- Project 4 -->
         <div class="project">
-            <a class="project4.html">
-                <img src="./Assets/img/logo.jpeg" alt="Project 4" width="300"> <!-- Adjust the width as needed -->
-                <h3>Company logo</h3>
-                <p></p>
+            <a href="project4.html">
+                <img src="./Assets/img/grocery.jpg" alt="Project 4">
+                <h3>Grocery App</h3>
+                <p>Revolutionize your shopping experience with our innovative Grocery App! Discover a seamless way to shop for your everyday essentials from the comfort of your home. With our user-friendly interface and extensive product catalog, finding and ordering your groceries has never been easier. From fresh produce to pantry staples, our app ensures that you have access to high-quality products at your fingertips. Experience convenience like never before with our Grocery App.</p>
             </a>
-            <style>
-                .project-image {
-    max-width: 100%; /* Set the maximum width of the image */
-    height: auto; /* Maintain the aspect ratio */
-}
-
-            </style>
         </div>
-        
+
+        <div class="project">
+            <a href="project5.html">
+                <img src="./Assets/img/ecom.png" alt="Project 5">
+                <h3>E-commerce Store</h3>
+                <p>Welcome to our E-commerce Store, your ultimate destination for online shopping! Explore a diverse range of products carefully curated to cater to your every need and desire. Whether you're searching for fashion essentials, home decor items, electronics, or lifestyle products, our store offers an extensive selection to satisfy your shopping cravings. With secure payment options, hassle-free returns, and swift delivery services, shopping at our E-commerce Store is both convenient and enjoyable. Experience the joy of online shopping with us today!</p>
+            </a>
+        </div>
         <!-- Add more projects as needed -->
     </div>
 </section>   
